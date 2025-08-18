@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+int fn(int n){
+    int i,k=1,j;
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            cout<<k<<" ";
+            k++;
+            
+            
+        }
+        cout<<endl;
+
+    }
+    return 0;
+}
+
+
+int main() {
+    int n;
+    cin>>n;
+    fn(n);
+
+    return 0;
+}
