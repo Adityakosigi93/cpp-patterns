@@ -1,0 +1,36 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+void fn(int n){
+    int i,j;
+    char k;
+    for(i=0;i<n;i++){
+        for(j=n-1;j>i;j--){
+            cout<<" ";
+        }
+        for(j=0;j<=i;j++){
+            for(k='A';i>=j;k++){
+                cout<<k<<"";
+                j++;
+            }
+        }
+        for(j=0;j<i;j++){
+            for(k='A'+i-1;k>='A';k--){
+                cout<<k<<"";
+                j++;
+            }
+        }
+        
+        cout<<endl;
+        
+    }
+    
+}
+
+int main() {
+    int n;
+    cin>>n;
+    fn(n);
+
+    return 0;
+}
