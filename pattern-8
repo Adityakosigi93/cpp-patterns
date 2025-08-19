@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+int fn(int n){
+    int i,j;
+    char k;
+    for(i=0;i<n;i++){
+        for(j=0;j<=i;j++){
+            for(k='A'+n-i-1;j<=i;k++){
+                cout<<k;
+                j++;
+            }
+            
+            
+        }
+        
+        
+        
+        cout<<endl;
+
+    }
+    return 0;
+}
+
+
+int main() {
+    int n;
+    cin>>n;
+    fn(n);
+
+    return 0;
+}
